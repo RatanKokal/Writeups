@@ -2,24 +2,23 @@
 ## crypto/alkane
 ### Introduction
 
-The program encodes message with a key and stores it in the output file. The key has the conetnt of the flag( the one within tjctf{} ).
-The encryption xors the message with the result of the custom keysch function whose each bit is a result of xor of the bit in key at the position mentioned in schedule[i].
+The program encodes a message with a key and stores it in the output file. The key contains the content of the flag (enclosed within `tjctf{}`). The encryption process XORs the message with the result of the custom keysch function, where each bit is a result of the XOR operation between the corresponding bit in the key at the position mentioned in `schedule[i]`.
 
 The files involved in the challenge can be found [here](./main.py) and [here](./output.txt)
 
 ### Solve
 - Storing the freq%2 for each bit in the key for each of the schedule in the matrix
 - Key is a 128 * 1 matrix of 0s and 1s, similarly out can be representated as 128 * 1 matrix.
-- It boils down to solving (AX)%2 = B. X are the bits of the flag
+- It boils down to solving `(AX)%2 = B`. X are the bits of the flag
 
 ### Catch
-Since the matrix A is non-invertible, we will have to check for all the elements in null space too
+Due to the non-invertible nature of matrix A, it's necessary to check for all elements in the null space as well.
 
 Solution = Particular Soln + Linear combination of null space
 
-Since everything is just in 0s and 1s, I have used galois field of 2.
-
 ### Script
+
+Since everything is just in 0s and 1s, I have used galois field of 2.
 
 ``` from sage.all import *
 from Crypto.Util.number import *
