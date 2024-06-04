@@ -5,7 +5,7 @@
 The program encodes message with a key and stores it in the output file. The key has the conetnt of the flag( the one within tjctf{} ).
 The encryption xors the message with the result of the custom keysch function whose each bit is a result of xor of the bit in key at the position mentioned in schedule[i].
 
-The files involved in the challenge can be found [here](./output.txt) and [here](./main.py)
+The files involved in the challenge can be found [here](./main.py) and [here](./output.txt)
 
 ### Solve
 - Storing the freq%2 for each bit in the key for each of the schedule in the matrix
