@@ -9,7 +9,7 @@ Every PNG file starts with a unique file signature: `89 50 4E 47 0D 0A 1A 0A`. T
 - **Data**: The content of the chunk.
 - **CRC**: A checksum to ensure the chunk's integrity.
 
-The **IHDR** chunk contains the image’s width and height, and you’ll manipulate these values to reveal hidden content.
+In this challenge, the image suggests that there's hidden data, possibly indicated by a premature file termination. The **IHDR** chunk stores the width and **height** of the image, which might be manipulated to reveal hidden content.
 
 ## Steps to Solve
 1. **Open the File**:  
