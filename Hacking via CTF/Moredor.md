@@ -23,7 +23,7 @@ In this challenge, the image suggests that there's hidden data, possibly indicat
    :%!xxd
    ```
 3. **Locate IHDR**:
-    Scroll through the hexdump to find the IHDR chunk. Check the 4 bytes following IHDR for the height.
+    Scroll through the hexdump to find the IHDR chunk. The 4 bytes following IHDR are for width, check the next 4 bytes for height.
 4. **Modify the Height**:
     Edit the height by increasing its hexadecimal value until the hidden flag becomes visible.
 5. **Exit Hexdump Mode**:
