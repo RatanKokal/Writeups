@@ -30,3 +30,5 @@ In this challenge, the image suggests that there's hidden data, possibly indicat
     After editing, convert the file back from hexdump view:
     ```bash
     :%!xxd -r
+    ```
+Pro Tip: Use `/"any string"` to find all instance of that in vim. Can be used to find IHDR quickly.
