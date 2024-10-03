@@ -29,7 +29,7 @@ In this challenge, the image suggests that there's hidden data, possibly indicat
 3. **Locate IHDR**:
     Scroll through the hexdump to find the IHDR chunk. The 4 bytes following IHDR are for width, check the next 4 bytes for height.
 4. **Modify the Height**:
-    Edit the height by increasing its hexadecimal value until the hidden flag becomes visible.
+    Edit the height by increasing its hexadecimal value until the hidden flag becomes visible. I changed it to `00 00 04 7e`.
 5. **Exit Hexdump Mode**:
     After editing, convert the file back from hexdump view:
     ```bash
