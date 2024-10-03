@@ -1,5 +1,5 @@
 # Steganography Challenge (PNG File)
-![Challenge](./moredor.png)
+
 ## Why Use Terminal-Based Editors (e.g., Vim) Over Notepad?
 Notepad is convenient for text files but lacks essential features for cybersecurity tasks. Opening non-text files in Notepad can produce unreadable characters since these files often use ASCII encoding. ASCII maps characters to numbers from 0 to 255, many of which aren't human-readable. To interpret and manipulate these files efficiently, hexadecimal (base-16) representation is preferred, as it provides a way to visualize and edit binary data.
 
@@ -34,5 +34,4 @@ In this challenge, the image suggests that there's hidden data, possibly indicat
     ```bash
     :%!xxd -r
     ```
-![Solved challenge](./solved.png)
 Pro Tip: Use `/"any string"` to find all instance of that in vim. Can be used to find IHDR quickly.
